@@ -249,10 +249,6 @@ footer {
   display: none;
 }
 
-.footer-container > p {
-  color: rgb(145, 148, 150);
-}
-
 .footer-lists {
   display: flex;
   /* 要素を縦並びにする場合はflex-direction: column; */
@@ -272,24 +268,21 @@ footer {
 
 .list-t {
   color: rgb(145, 148, 150);
-  padding-bottom: 1rem;
-}
-
-.icons {
-  /* width: 100px; */
-  /* background-color: hotpink; */
+  /* padding-bottom: 1rem; */
 }
 
 .icons > ul {
-  /* display: flex;
-  justify-content: flex-start; */
+  margin: 2rem 0;
 }
 
 .icons > ul > li {
   display: inline-block;
   background-color: #fff;
+  color: #fff;
   width: 1.5rem;
   height: 1.5rem;
+  border-radius: 50%;
+  padding: 0.3rem;
   margin-right: 1.5rem;
 }
 
@@ -301,12 +294,33 @@ footer {
 
 .policies > ul {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 50%;
+  line-height: 2rem;
+  margin-block-start: 0;
 }
 
-.policies > ul > li,
-.policies > p {
+.policies > ul > li {
   font-size: 0.2rem;
+  margin-right: 1.5rem;
+}
+
+.copyright > p {
+  font-size: 0.2rem;
+  line-height: 2rem;
+}
+
+.usa,
+.copyright {
+  /* margin: 0 auto; */
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.usa > p {
+  color: rgb(145, 148, 150);
+  font-size: 0.2em;
 }
 
 /* レスポンシブ @mediaクエリの設定 */
