@@ -84,6 +84,14 @@ svg.spoti-logo {
 /* 大画面用header-nav */
 .header-nav {
   display: none;
+  color: #fff;
+  max-width: 480px;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
 .mobile-menu-icon {
@@ -231,9 +239,14 @@ footer {
   z-index: 2;
 }
 
-.footer-logo {
+.footer-logo,
+.footer-secondLogo {
   padding: 3rem 1rem;
   padding-bottom: 1rem;
+}
+
+.footer-secondLogo {
+  display: none;
 }
 
 .footer-container > p {
@@ -304,4 +317,28 @@ footer {
 }
 
 @media (min-width: 991px) {
+  .header-btn {
+    display: none;
+  }
+
+  .header-nav {
+    display: block;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-secondLogo {
+    display: block;
+  }
+
+  .footer-lists {
+    display: flex;
+    /* 要素を縦並びにする場合はflex-direction: column; */
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: ; */
+    color: #fff;
+  }
 }
