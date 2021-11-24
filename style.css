@@ -152,7 +152,7 @@ svg.spoti-logo {
   background-repeat: no-repeat;
   background-size: 150%;
   background-position: center;
-  height: 680px;
+  height: 100vh;
   z-index: 1;
   position: relative;
 }
@@ -190,7 +190,7 @@ svg.spoti-logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 300px;
+  width: auto;
   /* margin: 0 auto; */
 }
 
@@ -295,14 +295,17 @@ footer {
 
 .policies {
   color: rgb(145, 148, 150);
-}
-
-.policies > ul {
   display: flex;
   justify-content: space-between;
 }
 
-.policies > ul > li {
+.policies > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.policies > ul > li,
+.policies > p {
   font-size: 0.2rem;
 }
 
