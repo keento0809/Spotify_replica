@@ -18,12 +18,18 @@
 }
 
 /* whole(共通) */
+body,
+header,
+main,
+footer {
+  z-index: 2;
+}
+
 body {
   margin: 0;
   color: #000;
   /* background-color: rgba(0, 0, 0, 0.4); */
   font-family: "Circular Spotify Tx T Black";
-  /* z-index: 5; */
 }
 
 ul {
@@ -154,28 +160,26 @@ svg.spoti-logo {
   background-size: 150%;
   background-position: center;
   height: 100vh;
-  z-index: 1;
   position: relative;
 }
 
 /* テスト：一時的な記述 */
 
 .cover-dark {
-  position: absolute;
-  left: 100%;
+  position: fixed;
   background-color: rgba(0, 0, 0);
   width: 100%;
   height: 100%;
-  transform: none;
-  transition: all 0.2s;
-  transition-timing-function: cubic-bezier(0.01, 1.15, 0.37, 0.99);
-  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.8s;
+  transition-timing-function: ease-in-out;
 }
 
 .cover-dark-container {
   color: #fff;
   text-align: left;
   padding-left: 2rem;
+  /* transition: opacity 0.5s ease; */
 }
 
 .cover-dark-container > h2:hover,
@@ -184,14 +188,66 @@ svg.spoti-logo {
   transition: color 0.1s ease;
 }
 
+.cover-dark-container > h2.slideIn,
+.cover-dark-container > h3.slideIn {
+}
+
 .cover-dark-container > h2 {
   font-size: 2rem;
 }
 
+.cover-lg {
+  margin-top: 14rem;
+}
+
+.slideIn {
+  opacity: 1;
+  animation-name: cm-cover-slideIn;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.92, -0.33, 0.68, 0.96);
+}
+
+.slideIn:first-child {
+  animation-delay: none;
+}
+.slideIn:nth-child(2) {
+  animation-delay: 0.02s;
+}
+.slideIn:nth-child(3) {
+  animation-delay: 0.03s;
+}
+.slideIn:nth-child(4) {
+  animation-delay: 0.04s;
+}
+.slideIn:nth-child(5) {
+  animation-delay: 0.06s;
+}
+.slideIn:last-child {
+  animation-delay: 0.1s;
+}
+
 .nom {
-  transform: translateX(-100%);
-  transition: all 0.2s;
-  transition-timing-function: cubic-bezier(0.01, 1.15, 0.37, 0.99);
+  z-index: 3;
+  opacity: 1;
+  /* transform: ; */
+  transition: opacity 0.4s;
+  transition-timing-function: ease-in-out;
+  /* animation: cm-cover-slideIn; */
+}
+
+/* カバーメニュー用アニメーション */
+@keyframes cm-cover-slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* テストここまで */
@@ -247,7 +303,6 @@ svg.spoti-logo {
 /* footer */
 footer {
   background-color: rgb(0, 0, 0);
-  z-index: 2;
 }
 
 .footer-logo,
