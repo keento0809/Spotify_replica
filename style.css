@@ -138,17 +138,17 @@ svg.spoti-logo {
 }
 
 .mobile-menu-icon.menu-open > span:first-child {
-  transform: translateY(7px) rotate(135deg);
+  transform: translateY(7px) rotate(-45deg);
 }
 
 .mobile-menu-icon.menu-open > span:nth-child(2) {
   /* transform: scaleX(0); */
-  transform: translateX(-50%) scaleX(0);
+  transform: scaleX(0);
   /* opacity: 0; */
 }
 
 .mobile-menu-icon.menu-open > span:last-child {
-  transform: translateY(-7px) rotate(-135deg);
+  transform: translateY(-7px) rotate(45deg);
 }
 
 /* main */
@@ -220,6 +220,9 @@ svg.spoti-logo {
   animation-delay: 0.04s;
 }
 .slideIn:nth-child(5) {
+  animation-delay: 0.05s;
+}
+.slideIn:nth-child(6) {
   animation-delay: 0.06s;
 }
 .slideIn:last-child {
@@ -229,10 +232,6 @@ svg.spoti-logo {
 .nom {
   z-index: 3;
   opacity: 1;
-  /* transform: ; */
-  transition: opacity 0.4s;
-  transition-timing-function: ease-in-out;
-  /* animation: cm-cover-slideIn; */
 }
 
 /* カバーメニュー用アニメーション */
@@ -249,6 +248,8 @@ svg.spoti-logo {
     transform: translateX(0);
   }
 }
+
+/*  */
 
 /* テストここまで */
 

@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("menu-open");
     coverD.classList.toggle("nom");
     coverLogo.classList.toggle("slideIn");
     getHTML(h2s);
