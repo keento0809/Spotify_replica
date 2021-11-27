@@ -176,7 +176,7 @@ svg.spoti-logo {
   color: #fff;
   text-align: left;
   padding-left: 2rem;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .cover-dark-container > h2:hover,
@@ -202,6 +202,7 @@ svg.spoti-logo {
   animation-name: cm-cover-slideIn;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.92, -0.33, 0.68, 0.96);
+  /* animation-delay: 0.2s; */
 }
 
 .slideIn:first-child {
@@ -209,21 +210,27 @@ svg.spoti-logo {
 }
 .slideIn:nth-child(2) {
   animation-delay: 0.02s;
+  /* animation-delay: 0.22s; */
 }
 .slideIn:nth-child(3) {
   animation-delay: 0.03s;
+  /* animation-delay: 0.23s; */
 }
 .slideIn:nth-child(4) {
   animation-delay: 0.04s;
+  /* animation-delay: 0.24s; */
 }
 .slideIn:nth-child(5) {
   animation-delay: 0.05s;
+  /* animation-delay: 0.25s; */
 }
 .slideIn:nth-child(6) {
   animation-delay: 0.06s;
+  /* animation-delay: 0.26s; */
 }
 .slideIn:last-child {
   animation-delay: 0.1s;
+  /* animation-delay: 0.3s; */
 }
 
 .nom {
@@ -239,10 +246,10 @@ svg.spoti-logo {
   }
   98% {
     opacity: 1;
+    transform: translateX(0);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
   }
 }
 
@@ -331,6 +338,8 @@ footer {
 
 .list-t {
   color: rgb(145, 148, 150);
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
   /* padding-bottom: 1rem; */
 }
 
