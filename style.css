@@ -61,7 +61,7 @@ header {
 
 .header-inner {
   max-width: 750px;
-  height: 3.35rem;
+  height: 3.4rem;
   padding: 0 0.5rem;
   margin: 0 auto;
   display: flex;
@@ -71,18 +71,18 @@ header {
 }
 
 .header-logo {
-  height: 30px;
+  height: 26px;
+  padding-left: 0.4rem;
 }
 
 svg.spoti-logo {
   fill: #fff;
   width: 90px;
-  height: 30px;
+  height: 1.7rem;
   /* line-height: 50px; */
 }
 
 .header-btn {
-  /* background-color: #fff; */
   padding-top: 0px;
   height: 20px;
   z-index: 3;
@@ -142,9 +142,7 @@ svg.spoti-logo {
 }
 
 .mobile-menu-icon.menu-open > span:nth-child(2) {
-  /* transform: scaleX(0); */
   transform: scaleX(0);
-  /* opacity: 0; */
 }
 
 .mobile-menu-icon.menu-open > span:last-child {
@@ -170,16 +168,15 @@ svg.spoti-logo {
   background-color: rgba(0, 0, 0);
   width: 100%;
   height: 100%;
+  transition: opacity 0.3s ease-in-out;
   opacity: 0;
-  transition: opacity 0.8s;
-  transition-timing-function: ease-in-out;
 }
 
 .cover-dark-container {
   color: #fff;
   text-align: left;
   padding-left: 2rem;
-  /* transition: opacity 0.5s ease; */
+  opacity: 0;
 }
 
 .cover-dark-container > h2:hover,
@@ -208,7 +205,7 @@ svg.spoti-logo {
 }
 
 .slideIn:first-child {
-  animation-delay: none;
+  /* animation-delay: none; */
 }
 .slideIn:nth-child(2) {
   animation-delay: 0.02s;
@@ -259,7 +256,6 @@ svg.spoti-logo {
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
-  /* margin: 0 auto; */
 }
 
 .main-title {
