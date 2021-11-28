@@ -433,6 +433,13 @@ footer {
 
   .icons > ul {
     padding-inline-start: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .policies > ul {
+    width: 55%;
+    line-height: 2.5rem;
+    padding-inline-start: 1.5rem;
   }
 
   .policies > ul > li {
