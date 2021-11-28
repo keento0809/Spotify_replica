@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // addEventListenerのイベント発火条件を定義
   // const eventType = getEventType();
-  console.log(coverDContainer);
+  // console.log(coverDContainer);
 
   menuBtn.addEventListener("click", () => {
     // coverDContainer.classList.toggle("nom");

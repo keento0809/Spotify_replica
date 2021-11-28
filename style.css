@@ -285,7 +285,7 @@ svg.spoti-logo {
   font-weight: lighter;
   line-height: 24px;
   font-size: 0.9em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   white-space: nowrap;
 }
 
@@ -349,13 +349,17 @@ footer {
 
 .icons > ul > li {
   display: inline-block;
-  background-color: #fff;
+  background-color: rgb(34, 35, 38);
   color: #fff;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  padding: 0.3rem;
-  margin-right: 1.5rem;
+  padding: 0.65rem;
+  margin-right: 0.6rem;
+}
+
+.icons > ul > li > img {
+  background-color: #fff;
 }
 
 .policies {
