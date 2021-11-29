@@ -62,8 +62,8 @@ header {
 .header-inner {
   max-width: 750px;
   height: 3.4rem;
-  padding-left: 0.9rem;
-  padding-right: 1rem;
+  padding-left: 0.7rem;
+  padding-right: 0.55rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -72,14 +72,14 @@ header {
 }
 
 .header-logo {
-  height: 26px;
-  padding-left: 0.4rem;
+  height: 29px;
+  padding-left: 0.25rem;
 }
 
 svg.spoti-logo {
   fill: #fff;
-  width: 90px;
-  height: 1.7rem;
+  width: 89px;
+  height: 1.8rem;
   /* line-height: 50px; */
 }
 
@@ -117,7 +117,7 @@ svg.spoti-logo {
 
 .mobile-menu-icon > span {
   background-color: #fff;
-  width: 1.36rem;
+  width: 1.38rem;
   height: 3px;
   border-radius: 25px;
   /* spanはinline要素なのでwidthとheightを指定するためには
@@ -288,7 +288,8 @@ svg.spoti-logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto;
+  width: 315px;
+  max-width: 315px;
 }
 
 .main-title {
@@ -305,6 +306,8 @@ svg.spoti-logo {
 
 .explain {
   margin-bottom: 3em;
+  overflow-wrap: normal;
+  width: 100%;
 }
 
 .explain > p {
@@ -312,7 +315,8 @@ svg.spoti-logo {
   line-height: 24px;
   font-size: 0.9em;
   letter-spacing: 0.03em;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: normal;
 }
 
 .titles > .start-btn {
@@ -429,6 +433,21 @@ footer {
 
 /* iPad用 */
 @media (min-width: 480px) {
+  .header-inner {
+    padding-left: 0.7rem;
+    padding-right: 0.6rem;
+  }
+
+  .titles {
+    width: 480px;
+    max-width: 480px;
+  }
+
+  .explain {
+    width: 85%;
+    margin: 0 auto 3.5em auto;
+  }
+
   /* cover-dark(カバーメニュー)のサイズ調整 */
   .cover-dark {
     left: 42%;
