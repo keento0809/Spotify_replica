@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // DOMの取得
   const body = document.querySelector("body");
   const menuBtn = document.querySelector(".mobile-menu-icon");
+  const additionalCover = document.querySelector(".additional-darkcover");
   const coverD = document.querySelector(".cover-dark");
   const coverDContainer = document.querySelector(".cover-dark-container");
   const h2s = document.querySelectorAll("h2");
@@ -35,6 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
     coverLogo.classList.toggle("slideIn");
     menuBtn.classList.toggle("menu-open");
     coverD.classList.toggle("nom");
+    additionalCover.classList.toggle("nom-second");
     getHTML(h2s);
     getHTML(h3s);
   });
