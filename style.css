@@ -93,6 +93,7 @@ svg.spoti-logo {
 .header-nav {
   display: none;
   color: #fff;
+  width: 100%;
   max-width: 480px;
 }
 
@@ -512,6 +513,22 @@ footer {
 
 /* iPad pro用 */
 @media (min-width: 992px) {
+  .header-inner {
+    max-width: 1187px;
+    height: 5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.6rem;
+  }
+
+  .header-logo {
+    height: 2.5rem;
+  }
+
+  .header-logo > svg.spoti-logo {
+    width: 130px;
+    height: 6rem;
+  }
+
   .header-btn {
     display: none;
   }
