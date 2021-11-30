@@ -499,6 +499,14 @@ footer {
   .explain > p {
     font-size: 1.1rem;
   }
+}
+
+/* footerの表示切替 */
+@media (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+    width: 100%;
+  }
 
   .footer-logo {
     padding-left: 1.3rem;
@@ -569,6 +577,13 @@ footer {
 
   .explain > p {
     font-size: 1rem;
+  }
+
+  /* footerのレイアウト変更 */
+  .wide-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .footer-logo {
