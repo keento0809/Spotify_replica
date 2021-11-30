@@ -49,7 +49,7 @@ a {
 }
 
 .container {
-  max-width: 1187px;
+  max-width: 1200px;
   /* text-align: center; */
   margin: 0 auto;
 }
@@ -157,13 +157,16 @@ svg.spoti-logo {
 }
 
 /* main */
-.main-container {
-  text-align: center;
-  color: #1ed760;
+main {
   background: url(images/bursts-tablet.svg) rgb(41, 64, 171);
   background-repeat: no-repeat;
   background-size: 150%;
   background-position: center;
+}
+
+.main-container {
+  text-align: center;
+  color: #1ed760;
   height: 100vh;
   position: relative;
 }
@@ -662,8 +665,9 @@ footer {
   }
 }
 
-/* @media (min-width: 1188px) {
-  .main-container {
-
+/* title表示変更など */
+/* @media (min-width: 1200px) {
+  main {
+    margin: 0 auto;
   }
 } */
