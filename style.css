@@ -319,19 +319,27 @@ svg.spoti-logo {
   overflow-wrap: normal;
 }
 
-.titles > .start-btn {
+/* .titles > .start-btn {
   margin-top: 20px;
-}
+} */
 
 #getBtn {
   border-radius: 25px;
   color: rgb(41, 64, 171);
-  background-color: #1ed760;
-  padding: 15px 30px;
+  background-color: rgba(30, 215, 96, 0.9);
+  padding: 0.9rem 2rem;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  /* letter-spacing: -1px; */
+  /* インライン要素に対してtransformは効かない */
+  display: inline-block;
+  transform: none;
+}
+
+/* Btn hover時のCSS */
+#getBtn:hover {
+  transform: scale(1.05);
+  background-color: rgba(30, 215, 96);
 }
 
 /* footer */
@@ -445,7 +453,7 @@ footer {
 
   .explain {
     width: 85%;
-    margin: 0 auto 3.5em auto;
+    margin: 0 auto 2.5em auto;
   }
 
   /* cover-dark(カバーメニュー)のサイズ調整 */
@@ -469,7 +477,7 @@ footer {
   }
 
   .cover-lg {
-    margin-top: 36rem;
+    margin-top: 43rem;
     height: 1.9rem;
   }
 
@@ -524,8 +532,13 @@ footer {
     color: #fff;
   }
 
+  .footer-lists > ul > li {
+    line-height: 1.2rem;
+  }
+
   .icons > ul {
     padding-inline-start: 1.5rem;
+    margin-top: 4rem;
     margin-bottom: 1rem;
   }
 
@@ -638,8 +651,19 @@ footer {
     font-size: 0.8rem;
   }
 
+  .usa > p,
+  .policies {
+    padding-right: 0.5rem;
+  }
+
   .policies > ul {
     width: 70%;
     margin-bottom: 3.5rem;
   }
 }
+
+/* @media (min-width: 1188px) {
+  .main-container {
+
+  }
+} */
