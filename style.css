@@ -288,7 +288,7 @@ svg.spoti-logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 315px;
+  width: 100%;
   max-width: 315px;
 }
 
@@ -509,7 +509,7 @@ footer {
   }
 
   .footer-logo {
-    padding-left: 1.3rem;
+    padding-left: 1.6rem;
   }
 
   .footer-lists {
@@ -579,11 +579,18 @@ footer {
     font-size: 1rem;
   }
 
+  /* footer max-width変更 */
+  .footer-container {
+    max-width: 992px;
+    width: 100%;
+  }
+
   /* footerのレイアウト変更 */
   .wide-footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 4rem 1rem;
   }
 
   .footer-logo {
@@ -592,14 +599,47 @@ footer {
 
   .footer-secondLogo {
     display: block;
+    padding-top: 0.5rem;
   }
 
   .footer-lists {
     display: flex;
     /* 要素を縦並びにする場合はflex-direction: column; */
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex: 6.5;
     /* align-items: ; */
     color: #fff;
+    padding-left: 0;
+  }
+
+  .footer-lists > ul {
+    flex: 0.3;
+  }
+
+  .icons {
+    flex: 2.5;
+    text-align: right;
+  }
+
+  .icons > ul > li {
+    padding: 1rem;
+  }
+
+  .icons > ul > li:nth-child(1) {
+    margin-right: 0.9rem;
+  }
+
+  .icons > ul > li:nth-child(2) {
+    margin-right: 0.9rem;
+  }
+
+  .usa > p {
+    font-size: 0.8rem;
+  }
+
+  .policies > ul {
+    width: 70%;
+    margin-bottom: 3.5rem;
   }
 }
