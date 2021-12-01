@@ -93,8 +93,7 @@ svg.spoti-logo {
 .header-nav {
   display: none;
   color: #fff;
-  width: 100%;
-  max-width: 480px;
+  width: 480px;
 }
 
 .nav-lists {
@@ -455,8 +454,12 @@ footer {
   }
 
   .explain {
-    width: 85%;
+    width: 90%;
     margin: 0 auto 2.5em auto;
+  }
+
+  .explain > p {
+    font-size: 1rem;
   }
 
   /* cover-dark(カバーメニュー)のサイズ調整 */
@@ -505,10 +508,6 @@ footer {
     /* letter-spacing:文字間隔を詰める; */
     letter-spacing: -6px;
     line-height: 1;
-  }
-
-  .explain > p {
-    font-size: 1.1rem;
   }
 }
 
@@ -562,10 +561,13 @@ footer {
 
 /* iPad pro用 */
 @media (min-width: 992px) {
+  /* .container.header-container {
+  } */
+
   .header-inner {
-    max-width: 1187px;
+    max-width: 947px;
     height: 5rem;
-    padding-left: 1.2rem;
+    padding-left: 1.35rem;
     padding-right: 1.6rem;
   }
 
@@ -666,8 +668,27 @@ footer {
 }
 
 /* title表示変更など */
-/* @media (min-width: 1200px) {
-  main {
-    margin: 0 auto;
+@media (min-width: 1200px) {
+  .header-inner {
+    max-width: 1200px;
   }
-} */
+
+  .titles {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .main-title {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+
+  .main-title > h1 {
+    font-size: 10rem;
+    letter-spacing: -9px;
+  }
+
+  .main-title > h1:last-child {
+    text-align-last: right;
+  }
+}
