@@ -39,6 +39,8 @@ ul {
 }
 
 h1,
+h2,
+h3,
 p {
   margin: 0;
 }
@@ -208,12 +210,31 @@ main {
   transition: color 0.1s ease;
 }
 
-.cover-dark-container > h2.slideIn,
+/* .cover-dark-container > h2.slideIn, */
 .cover-dark-container > h3.slideIn {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#interBar {
+  margin: 1.4rem 0;
 }
 
 .cover-dark-container > h2 {
   font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.cover-dark-container > h2:first-child {
+  margin-top: 2rem;
+}
+
+.cover-dark-container > h3:nth-child(1) {
+  margin-top: 3rem;
+}
+
+.cover-menu {
+  position: relative;
 }
 
 .cover-lg {
@@ -307,7 +328,7 @@ main {
 }
 
 .explain {
-  margin-bottom: 3em;
+  margin-bottom: 2rem;
   overflow-wrap: normal;
   width: 100%;
 }
@@ -480,6 +501,10 @@ footer {
     font-size: 1.7rem;
     margin: 0;
     margin-bottom: 1rem;
+  }
+
+  .cover-dark-container h2:first-child {
+    color: red;
   }
 
   .cover-lg {
