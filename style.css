@@ -28,15 +28,12 @@ footer {
 body {
   margin: 0;
   color: #191414;
-  /* background-color: rgba(0, 0, 0, 0.4); */
   font-family: "Circular Spotify Tx T Black";
-  /* font-family: spotify-circular, Helvetica, Arial, sans-serif; */
 }
 
 ul {
   list-style: none;
   padding-inline-start: 1rem;
-  /* margin: 0; */
 }
 
 h1,
@@ -53,7 +50,6 @@ a {
 
 .container {
   max-width: 1200px;
-  /* text-align: center; */
   margin: 0 auto;
 }
 
@@ -71,7 +67,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* line-height: 50px; */
 }
 
 .header-logo {
@@ -83,7 +78,6 @@ svg.spoti-logo {
   fill: #fff;
   width: 89px;
   height: 1.8rem;
-  /* line-height: 50px; */
 }
 
 .header-btn {
@@ -173,8 +167,6 @@ main {
   position: relative;
 }
 
-/* テスト：一時的な記述 */
-
 .additional-darkcover {
   visibility: hidden;
   opacity: 0;
@@ -195,11 +187,9 @@ main {
   max-width: 450px;
   height: 100%;
   transform: translateX(450px);
-  /* transition: visibility 3s ease, opacity 3s ease, z-index 3s ease; */
   transition: all 0.3s cubic-bezier(0.92, 0, 0.1, 0.99);
   opacity: 0;
   visibility: hidden;
-  /* animation-name: cv-slide-inout; */
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
 }
@@ -215,7 +205,6 @@ main {
   padding-left: 2rem;
   height: 100%;
   position: relative;
-  /* opacity: 0; */
 }
 
 .cover-dark-container > h2:hover,
@@ -249,7 +238,6 @@ main {
 }
 
 .cover-lg {
-  /* margin-top: 14rem; */
   position: absolute;
   left: 2rem;
   bottom: 4.5rem;
@@ -260,7 +248,6 @@ main {
   animation-name: cm-cover-slideIn;
   animation-duration: 0.8s;
   animation-timing-function: cubic-bezier(0.92, -0.33, 0.68, 0.96);
-  /* animation-delay: 0.1s; */
   animation-fill-mode: both;
 }
 
@@ -268,27 +255,21 @@ main {
   animation-delay: -0.4s;
 }
 .slideIn:nth-child(2) {
-  /* animation-delay: 0.02s; */
   animation-delay: -0.38s;
 }
 .slideIn:nth-child(3) {
-  /* animation-delay: 0.03s; */
   animation-delay: -0.36s;
 }
 .slideIn:nth-child(4) {
-  /* animation-delay: 0.04s; */
   animation-delay: -0.34s;
 }
 .slideIn:nth-child(5) {
-  /* animation-delay: 0.05s; */
   animation-delay: -0.329s;
 }
 .slideIn:nth-child(6) {
-  /* animation-delay: 0.06s; */
   animation-delay: -0.32s;
 }
 .slideIn:last-child {
-  /* animation-delay: 0.1s; */
   animation-delay: -0.3s;
 }
 
@@ -324,8 +305,6 @@ main {
     opacity: 1;
   }
 }
-
-/*  */
 
 /* テストここまで */
 
@@ -363,14 +342,6 @@ main {
   letter-spacing: 0.03em;
   white-space: normal;
   overflow-wrap: normal;
-}
-
-/* .titles > .start-btn {
-  margin-top: 20px;
-} */
-
-.start-btn {
-  /* z-index: 3; */
 }
 
 #getBtn {
@@ -535,17 +506,8 @@ footer {
   }
 
   .cover-lg {
-    /* margin-top: 43rem; */
     height: 1.9rem;
   }
-
-  /* .cover-dark-container > h3:first-child(1) {
-    margin-block-end: 0.5rem;
-  }
-
-  /* .cover-dark-container > h3:last-child(2) {
-    margin-block-start: 0.5rem;
-  } */
 
   .nom-second {
     visibility: visible;
@@ -614,9 +576,6 @@ footer {
 
 /* iPad pro用 */
 @media (min-width: 992px) {
-  /* .container.header-container {
-  } */
-
   .header-inner {
     max-width: 947px;
     height: 5rem;
@@ -679,7 +638,6 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     flex: 6.5;
-    /* align-items: ; */
     color: #fff;
     padding-left: 0;
   }

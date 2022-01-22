@@ -1,10 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
   // Get DOM
-  // const body = document.querySelector("body");
   const menuBtn = document.querySelector(".mobile-menu-icon");
   const additionalDarkCover = document.querySelector(".additional-darkcover");
   const darkCover = document.querySelector(".cover-dark");
-  // const darkCoverContainer = document.querySelector(".cover-dark-container");
   const h2s = document.querySelectorAll("h2");
   const h3s = document.querySelectorAll("h3");
   const coverLogo = document.querySelector(".cover-logo");
@@ -24,8 +22,12 @@ window.addEventListener("DOMContentLoaded", () => {
     menuBtn.classList.toggle("menu-open");
   };
 
-  const changeCover = () => {
+  const changeDarkCover = () => {
     darkCover.classList.toggle("nom");
+  };
+
+  const changeAdditionalDarkCover = () => {
+    additionalDarkCover.classList.toggle("nom-second");
   };
 
   // Hook up the event
